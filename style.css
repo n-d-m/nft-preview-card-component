@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primarySoftBlue: hsl(215, 51%, 70%);
+    --primaryCyan: hsl(178, 100%, 50%);
+    --neutralDarkBlueMain: hsl(217, 54%, 11%);
+    --neutralDarkBlueCard: hsl(216, 50%, 16%);
+    --neutralDarkBlueLine: hsl(215, 32%, 27%);
+    --neutralWhite: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--neutralDarkBlueMain);
+    font-family: Outfit, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 99vh;
+}
+
+h1{
+    color: var(--neutralWhite);
+    font-size: 1.4rem;
+}
+
+p{
+    color: var(--primarySoftBlue);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container{
+    background-color: var(--neutralDarkBlueCard);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    width: 360px;
+    margin-bottom: 30px;
+    box-shadow: 0px 30px 70px hsl(216, 65%, 5%);
+}
+
+.container img{
+    border-radius: 8px;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardInfo h1:hover{
+    color: var(--primaryCyan);
+}
+
+.cardStats{
+    display: flex;
+    gap: 80px;
+}
+
+.stats{
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+}
+
+.infoPrice p{
+    color: var(--primaryCyan);
+}
+
+.cardProfile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-top: thin solid hsl(215, 32%, 27%);
+    padding-top: 20px;
+}
+
+.cardProfile img{
+    border-radius: 50%;
+    border: thin solid white;
+    width: 3em;
+}
+
+.cardProfile span{
+    color: var(--neutralWhite);
+}
+
+.cardProfile span:hover {
+    color: var(--primaryCyan);
+}
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }

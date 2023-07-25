@@ -46,8 +46,36 @@ p{
     box-shadow: 0px 30px 70px hsl(216, 65%, 5%);
 }
 
-.container img{
+.imageCont #main_img{
     border-radius: 8px;
+    width: 100%;
+}
+
+.imageCont{
+    position: relative;
+}
+
+.image_overlay{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    border-radius: 8px;
+    width: 100%;
+    height: 99%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.image_overlay img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image_overlay:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .cardInfo{
@@ -58,6 +86,7 @@ p{
 
 .cardInfo h1:hover{
     color: var(--primaryCyan);
+    cursor: pointer;
 }
 
 .cardStats{
@@ -86,7 +115,7 @@ p{
 .cardProfile img{
     border-radius: 50%;
     border: thin solid white;
-    width: 3em;
+    width: 2.5em;
 }
 
 .cardProfile span{
@@ -95,6 +124,7 @@ p{
 
 .cardProfile span:hover {
     color: var(--primaryCyan);
+    cursor: pointer;
 }
 
 .attribution {
